@@ -3,7 +3,6 @@ SRC = $(wildcard src/*.c)
 OBJ = $(patsubst src/%.c, obj/%.o, $(SRC))
 
 run: clean default
-#	./$(TARGET) -n
 	./$(TARGET) -f ./mynewdb.db -n
 #	./$(TARGET) -f ./mynewdb.db -n
 #	./$(TARGET) -f ./mynewdb.db -a "Timmy H.,123 Sheshire Ln.,120"
