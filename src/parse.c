@@ -19,7 +19,7 @@
 // int read_employees(int fd, struct dbheader_t *dbhdr, struct employee_t **employeesOut) {
 // }
 
-int output_file(int fd, struct dbheader_t *dbhdr) {
+int output_file(int fd, struct dbheader_t *dbhdr, struct employee_t *employees) {
     if (fd < 0) {
         printf("Bad FD from user!\n");
         return STATUS_ERROR;
@@ -81,6 +81,8 @@ int validate_db_header(int fd, struct dbheader_t **headerOut) {
     }
 
     *headerOut = header;
+
+    return STATUS_SUCCESS;
 }
 
 int create_db_header(struct dbheader_t **headerOut) {
