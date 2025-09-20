@@ -10,14 +10,14 @@
 
 #include "common.h"
 
-void list_employees(struct dbheader_t *dbhdr, struct employee_t *employees) {
-}
+// void list_employees(struct dbheader_t *dbhdr, struct employee_t *employees) {
+// }
 
-int add_employee(struct dbheader_t *dbhdr, struct employee_t *employees, char *addstring) {
-}
+// int add_employee(struct dbheader_t *dbhdr, struct employee_t *employees, char *addstring) {
+// }
 
-int read_employees(int fd, struct dbheader_t *dbhdr, struct employee_t **employeesOut) {
-}
+// int read_employees(int fd, struct dbheader_t *dbhdr, struct employee_t **employeesOut) {
+// }
 
 int output_file(int fd, struct dbheader_t *dbhdr) {
     if (fd < 0) {
